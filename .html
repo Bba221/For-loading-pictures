@@ -2,6 +2,7 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>หน้าแรก📷</title>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -22,6 +23,7 @@
       padding: 2.5rem;
       border-radius: 1.5rem;
       backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px); /* Safari support */
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
       width: 350px;
       text-align: center;
@@ -30,48 +32,43 @@
       transform: translateY(50px);
     }
 
- @ keyframes slideUpFade }
-      
-       { opacity: 0;
-        transform: translateY (50 px);
+    @keyframes slideUpFade {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
       }
-     {
+      to {
         opacity: 1;
-        transform: translateY (0);
-      
-      }
-       {
-        opacity: 1;
-        transform: translateY (0);
+        transform: translateY(0);
       }
     }
 
     .card h2 {
-      font-size: 2 rem;
-      margin-bottom: 0.8 rem;
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
     }
 
     .card h4 {
       font-weight: 400;
-      margin-bottom: 1.8 rem;
+      margin-bottom: 1.8rem;
       color: #fefefe;
     }
 
     .card button {
-      padding: 0.8 rem 1.6 rem;
+      padding: 0.8rem 1.6rem;
       border: none;
-      border-radius: 999 px;
-      background: linear-gradient ( to right, #ff758c, #ff7eb3);
+      border-radius: 999px;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
       color: white;
       font-weight: bold;
-      font-size: 1 rem;
+      font-size: 1rem;
       cursor: pointer;
-      transition: background 0.3 s ease, transform 0.2 s ease;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
 
     .card button:hover {
-      background: linear-gradient ( to right, #f74d6c, #fa70a1);
-      transform: scale (1.05);
+      background: linear-gradient(to right, #f74d6c, #fa70a1);
+      transform: scale(1.05);
     }
   </style>
 </head>
